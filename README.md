@@ -1,2 +1,2 @@
-# DFBlog
+# WFBlog
 Personal blog design by Vue
