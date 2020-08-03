@@ -141,4 +141,17 @@
     bottom: 0;
   }
 
+  .el-menu.last-child{
+    /*position: absolute;*/
+    right: 0;
+  }
+
+  .tab{
+    width: 100%;
+  }
+
+  .tab-menu{
+    width: 100%;
+  }
+
 </style>
