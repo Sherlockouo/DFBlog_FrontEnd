@@ -17,13 +17,18 @@
         </el-menu-item>
         <form action="#" method="GET" class="search-all">
           <div class="search-input">
-
-            <i class="el-icon-search"></i>
+            <i class="el-icon-search"></i>&nbsp;
             <el-input placeholder="搜一搜"  v-model="keywords" clearable
                       @keyup.enter.native="submit">
             </el-input>
           </div>
+          <div class="user">
+            <i class="el-icon-user">
+              <a href="/about">关于我们</a>
+            </i>
+          </div>
         </form>
+
       </el-menu>
     </div>
   </div>
@@ -66,11 +71,6 @@
             icon: "el-icon-magic-stick",
             title: "实验室",
             url: "/lab"
-          },
-          {
-            icon: "el-icon-user",
-            title: "关于我",
-            url: "/about"
           }
         ]
       }
@@ -96,22 +96,19 @@
 <style scoped>
 
   .header{
+    background: white;
     display: flex;
     flex-direction: row;
     width: 100%;
   }
 
   .logo img {
-    /*display: flex;*/
     float: left;
     position: relative;
     width: 40px;
     height: 60px;
     z-index: 5;
   }
-
-
-
   .search-all {
     display: flex;
     height: 60px;
@@ -125,6 +122,12 @@
   .search-input{
     display: flex;
     align-items: center;
+  }
+  .user{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 70%;
   }
 
   .search-input >>> input {
