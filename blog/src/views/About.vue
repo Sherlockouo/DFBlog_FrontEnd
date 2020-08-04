@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <div class="self">
+      <p>sdfajskbfhfbasdasd</p>
     </div>
   </div>
 </template>
